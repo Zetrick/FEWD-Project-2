@@ -1,0 +1,122 @@
+/* =====================================
+               MAIN STYLES
+   ===================================== */
+
+body {
+    font-family: Oswald, Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: .7px;
+    font-weight: 400;
+    color: rgb(49, 49, 49);
+    background-color: #FFFBF5;
+}
+
+h1 {
+    justify-content: center;
+}
+
+p {
+    line-height: 1.5em;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(49, 49, 49);
+}
+
+
+/* =====================================
+               CLASS STYLES
+   ===================================== */
+
+.main-header, footer {
+    text-align: center;
+    background-color: #bba1aa42;
+    padding: 5px 5px;
+}
+.main-header ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px auto;
+}
+
+.main-header li {
+    padding: 8px;
+    margin: 8px;
+    background-color: rgb(237, 237, 237);
+    border-radius: 4px;
+}
+
+.main-header p {
+    max-width: 90%;
+    margin: 15px auto;
+}
+
+.main-nav {
+    margin: auto;
+}
+
+.image-portfolio-pic {
+    margin: 15px 0;
+    max-width: 90%;
+    border-radius: 2px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.portfolio-title {
+    margin: 45px auto 30px;
+}
+
+.portfolio-item {
+    margin: 30px auto;
+    max-width: 90%;
+}
+
+.portfolio-item h2 {
+    margin: 10px;
+}
+
+.portfolio-item p {
+    text-align: center;
+    margin: auto;
+    max-width: 85%;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+}
+
+.footer-content {
+    margin-top: 65px;
+}
+
+.footer-content h1 {
+    margin-bottom: 40px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    margin: 5px;
+}
+
+.bottom-of-site {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 15px;
+}
+
+/* =====================================
+               MEDIA QUERIES
+   ===================================== */
+
+   
