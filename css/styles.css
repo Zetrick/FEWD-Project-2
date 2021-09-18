@@ -28,9 +28,9 @@ h2 {
     margin: 0;
 }
 
-main {
+/* main {
     margin: 0 auto;
-}
+} */
 
 /* =====================================
                CLASS STYLES
@@ -39,6 +39,10 @@ main {
 header, footer {
     text-align: center;
     background-color: #bba1aa42;
+}
+
+.top-of-site-name {
+    padding: 20px 0;
 }
 
 .main-header{
@@ -212,6 +216,9 @@ header, footer {
      @media (min-width: 1024px)
      {  
 
+        .top-of-site-name {
+            padding: 8px;
+        }
         .main-header {
             display: flex;
             flex-wrap: wrap;
