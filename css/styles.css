@@ -3,15 +3,14 @@
    ===================================== */
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     font-family: Oswald, Verdana, Geneva, Tahoma, sans-serif;
     letter-spacing: .7px;
     font-weight: 400;
     color: rgb(49, 49, 49);
     background-color: #FFFBF5;
-}
-
-h1 {
-    justify-content: center;
 }
 
 p {
@@ -24,20 +23,33 @@ a {
     color: rgb(49, 49, 49);
 }
 
+h1,
+h2 {
+    margin: 0;
+}
+
+main {
+    margin: 0 auto;
+}
 
 /* =====================================
                CLASS STYLES
    ===================================== */
 
-.main-header, footer {
+header, footer {
     text-align: center;
     background-color: #bba1aa42;
-    padding: 5px 5px;
 }
-.main-header ul {
+
+.main-header{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.ul-nav-list {
     list-style: none;
     padding: 0;
-    margin: 15px auto;
+    margin: 0 auto;
+    max-width: 300px;
 }
 
 .main-header li {
@@ -52,10 +64,6 @@ a {
     margin: 15px auto;
 }
 
-.main-nav {
-    margin: auto;
-}
-
 .image-portfolio-pic {
     margin: 15px 0;
     max-width: 90%;
@@ -66,10 +74,14 @@ a {
     display: flex;
     flex-direction: column;
     text-align: center;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
-.portfolio-title {
+.portfolio-title
+ {
     margin: 45px auto 30px;
+    text-align: center;
 }
 
 .portfolio-item {
@@ -91,6 +103,36 @@ a {
     max-width: 100%;
 }
 
+.skills-title {
+    margin: 20px 0;
+}
+
+.skills-content {
+    text-align: center;
+    background-color: #d16014a4;
+    padding: 10px 0 60px;
+    min-width: 100vw;
+}
+
+.dev-skills {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: center;
+    max-width: 600px;
+}
+
+.skill-item {
+    margin: 5px 12px;
+    padding: 4px 6px;
+    white-space: nowrap;
+    border: 2px solid black;
+    background-color: #f5efee ;
+    color: black;
+}
+
 .footer-content {
     margin-top: 65px;
 }
@@ -99,14 +141,17 @@ a {
     margin-bottom: 40px;
 }
 
+.footer-content p {
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto 10px; 
+    max-width: 80%;
+}
+
 .contact-info {
     display: flex;
     flex-direction: column;
     margin-bottom: 15px;
-}
-
-.contact-info p {
-    margin: 5px;
 }
 
 .bottom-of-site {
@@ -119,4 +164,83 @@ a {
                MEDIA QUERIES
    ===================================== */
 
-   
+   /************************** 768px **************************/
+
+   @media (min-width: 768px)
+   {
+        .ul-nav-list {
+            display: flex;
+            margin: 0 50px 0 30px;
+            min-width: 615px;
+            max-width: none;
+            justify-content: space-between;
+        }
+
+        .ul-nav-list li {
+            flex: 1 50px;
+        }
+
+        .div-mini-bio {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: space-between;
+            margin: 30px 5%;
+        }
+
+        .div-mini-bio p {
+            text-align: justify;
+        }
+        .div-mini-bio img {
+            max-width: 40%;
+            margin-left: 50px;
+        }
+        
+        .main-content {
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+
+        .portfolio-item {
+            flex: 1 46%;
+            margin: 20px 2%;
+        }
+   }
+
+     /************************** 1024px **************************/
+
+     @media (min-width: 1024px)
+     {  
+
+        .main-header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+
+        .main-header h1 {
+            flex: 1 20%;
+            text-align: left;
+            margin-left: 3%;
+        }
+
+        .ul-nav-list {
+            flex: 1 46%;
+        }
+
+        .main-nav {
+            flex: 1;
+            margin-right: 2%;
+            /* min-width: 480px; */
+        }
+
+        .div-mini-bio p {
+            align-self: flex-start;
+        }
+
+        .portfolio-item {
+            flex-basis: 29%;
+            margin: 20px 1%;
+        }
+     }
