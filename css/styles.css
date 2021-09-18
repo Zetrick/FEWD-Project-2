@@ -43,6 +43,8 @@ header, footer {
 
 .top-of-site-name {
     padding: 20px 0;
+    color: rgba(143, 54, 54, 0.856);
+    letter-spacing: .2em;
 }
 
 .main-header{
@@ -54,6 +56,11 @@ header, footer {
     padding: 0;
     margin: 0 auto;
     max-width: 300px;
+}
+
+.ul-nav-list a {
+    display: block;
+    width: 100%;
 }
 
 .main-header li {
@@ -115,7 +122,6 @@ header, footer {
     text-align: center;
     background-color: #d16014a4;
     padding: 10px 0 60px;
-    min-width: 100vw;
 }
 
 .dev-skills {
@@ -238,8 +244,6 @@ header, footer {
 
         .main-nav {
             flex: 1;
-            margin-right: 2%;
-            /* min-width: 480px; */
         }
 
         .div-mini-bio p {
