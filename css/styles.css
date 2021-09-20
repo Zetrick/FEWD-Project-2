@@ -28,16 +28,11 @@ h2 {
     margin: 0;
 }
 
-/* main {
-    margin: 0 auto;
-} */
-
 /* =====================================
                CLASS STYLES
    ===================================== */
 
 header, footer {
-    text-align: center;
     background-color: #bba1aa42;
 }
 
@@ -50,6 +45,7 @@ header, footer {
 .main-header{
     max-width: 1600px;
     margin: 0 auto;
+    text-align: center;
 }
 .ul-nav-list {
     list-style: none;
@@ -76,7 +72,7 @@ header, footer {
 }
 
 .image-portfolio-pic {
-    margin: 15px 0;
+    margin: 15px auto;
     max-width: 90%;
     border-radius: 2px;
 }
@@ -112,6 +108,7 @@ header, footer {
 
 .portfolio-item img {
     max-width: 100%;
+    margin: 0 auto;
 }
 
 .skills-title {
@@ -143,15 +140,16 @@ header, footer {
     color: black;
 }
 
-.footer-content {
+.footer-contact-info {
     margin-top: 65px;
 }
 
-.footer-content h1 {
+.footer-contact-info h1 {
+    text-align: center;
     margin-bottom: 40px;
 }
 
-.footer-content p {
+.footer-contact-info p {
     justify-content: center;
     text-align: center;
     margin: 0 auto 10px; 
@@ -167,6 +165,16 @@ header, footer {
 .bottom-of-site {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin: 0 30px;
+}
+
+.ul-nav-list-bottom {
+    padding: 0;
+}
+
+.ul-nav-list-bottom li{
+    padding: 0;
     margin: 0 15px;
 }
 
@@ -176,6 +184,13 @@ header, footer {
 
    /************************** 768px **************************/
 
+   @media (max-width: 767px)
+   {
+        .bottom-nav {
+            display: none;
+        }
+   }
+
    @media (min-width: 768px)
    {
         .ul-nav-list {
@@ -184,6 +199,11 @@ header, footer {
             min-width: 615px;
             max-width: none;
             justify-content: space-between;
+        }
+
+        .ul-nav-list-bottom {
+            list-style: none;
+            display: flex;
         }
 
         .ul-nav-list li {
@@ -214,6 +234,14 @@ header, footer {
         .portfolio-item {
             flex: 1 46%;
             margin: 20px 2%;
+        }
+
+        .back-to-top-button {
+            display: none;
+        }
+
+        .bottom-name {
+            text-align: left;
         }
    }
 
